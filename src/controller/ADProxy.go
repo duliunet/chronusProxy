@@ -37,6 +37,8 @@ func (mProxy *ProxyS) main() {
 	mProxy.tcp2tcpStopCArr = make([]chan bool, 0, 10)
 	mProxy.udp2udpStopCArr = make([]chan bool, 0, 10)
 	mProxy.udp2tcpStopCArr = make([]chan bool, 0, 10)
+	mProxy.tcp2udpStopCArr = make([]chan bool, 0, 10)
+	mProxy.uart2udpStopCArr = make([]chan bool, 0, 10)
 	/* Func */
 	mProxy.readConfig()
 }
