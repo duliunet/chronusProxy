@@ -1,0 +1,108 @@
+{
+    "RunEnv": 0,
+    "Version": "0.8.7",
+    "NeuronId": "ChronusProxy",
+    "NeuronMail": "adumandix@gmail.com",
+    "AutorunConfig": {
+        "ADProxy": true,
+        "SDExampleInterface": true
+    },
+    "ErrorCode": {
+        "100": "Success",
+        "101": "System Running",
+        "102": "System ShutDown",
+        "103": "Process ShutDown",
+        "104": "Process Timeout",
+        "105": "Return Stack",
+        "200": "Failed",
+        "201": "Interface Banned",
+        "202": "JSON Error",
+        "203": "Command Error",
+        "204": "System Error",
+        "205": "File Error",
+        "206": "Buffer Error",
+        "207": "Request Error",
+        "208": "Auth Error",
+        "209": "Encode/Decode Error",
+        "210": "TCP Conn Error",
+        "211": "UDP Conn Error",
+        "212": "Url Error",
+        "213": "Path Error",
+        "214": "Websocket Error",
+        "215": "Transform Error",
+        "216": "IOReader Error",
+        "217": "Platform Error",
+        "218": "Exec Error",
+        "219": "Gzip Error",
+        "220": "Null Error",
+        "221": "ContentType Error",
+        "222": "UART Error",
+        "300": "Database Disconnected",
+        "301": "Query Error",
+        "302": "TransAction Error",
+        "303": "RollBack Error",
+        "304": "Commit Error",
+        "305": "Data Analyze Error",
+        "400": "Redis Disconnected",
+        "401": "Redis Error"
+    },
+    "Proxy": {
+        "ProxyHub": {
+            "TCP": {},
+            "UDP": {}
+        }
+    },
+    "File": {
+        "Chmod": 502,
+        "TempPath": "/static/temp/"
+    },
+    "HTTPRequest": {
+        "DefaultHeader": {
+            "User-Agent": [
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"
+            ]
+        }
+    },
+    "HTTPServer": {
+        "Host": "0.0.0.0",
+        "Port": 8800,
+        "StaticPath": "/static",
+        "UploadPath": "/static/upload",
+        "XPoweredBy": "Chronus Express",
+        "ACAO": false
+    },
+    "HTTPS": {
+        "Open": false,
+        "TLSPort": 8443,
+        "TLSCertPath": "/tls/tls"
+    },
+    "WSParam": {
+        "Interval": 120000,
+        "BufferSize": 2097152
+    },
+    "TCPParam": {
+        "Interval": 120000,
+        "BufferSize": 8192
+    },
+    "UDPParam": {
+        "MaxLen": 1,
+        "Interval": 120000,
+        "BufferSize": 8192
+    },
+    "UartParam": {
+        "Interval": 120000,
+        "BufferSize": 8192
+    },
+    "Interval": {
+        "HZ25TimerInterval": 40,
+        "HZ8TimerInterval": 125,
+        "HZ4TimerInterval": 250,
+        "HZ2TimerInterval": 500,
+        "HZ1TimerInterval": 1000,
+        "CommanderTimerInterval": 100,
+        "LooperTimerInterval": 3000,
+        "SystemTimerInterval": 30000,
+        "RetryTimerInterval": 5000,
+        "MicroMsgTokenInterval": 7200000
+    }
+}
